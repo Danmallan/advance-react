@@ -25,6 +25,10 @@
     }
   },
   "lint-staged": {
-    "*.scss": "npm run lint -- --fix"
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "npm run prettier",
+      "npm run lint",
+      "git add"
+    ]
   }
 }
