@@ -17,7 +17,8 @@
   },
   "scripts": {
     "lint": "stylelint src/**/*.scss",
-    "lint:fix": "npm lint --fix"
+    "lint:fix": "npm lint --fix",
+    "pre-commit": "lint-staged"
   },
   "husky": {
     "hooks": {
